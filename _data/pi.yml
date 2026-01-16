@@ -1,0 +1,26 @@
+- name: Anowarul Kabir, Ph.D.
+  photo: headshot.jpg
+  info: Ph.D. in Computer Science, George Mason University
+  email: akabir@usf.edu
+  github: https://github.com/akabiraka
+  researchgate: https://www.researchgate.net/profile/Anowarul-Kabir
+  scholar: https://scholar.google.com/citations?user=6vjzN7EAAAAJ&hl=en
+  linkedin: https://www.linkedin.com/in/anowarul-kabir-25b0021b5/ 
+  cv: cv.pdf
+  # Change the items in "education" you have (up to 6)
+  education:
+    [
+      "2025, Ph.D. in Computer Science, George Mason University, Virginia, USA",
+      "2016, B.Sc. in Software Engineering, Institute of Information Technology, University of Dhaka, Dhaka, Bangladesh",
+      "2011, HHC, Birshreshtha Noor Mohammad Public College, Dhaka, Bangladesh",
+      "2009, SSC, Singair Pilot High School, Manikganj, Dhaka, Bangladesh",
+      "Email: akabir@usf.edu",
+    ]
+
+  affiliationshort:
+    [
+      "Assistant Professor, University of South Florida, USA",
+      "Ph.D. in Computer Science, George Mason University", 
+      "B.Sc. in Software Engineering, University of Dhaka",
+      "Email: akabir@usf.edu",
+    ]

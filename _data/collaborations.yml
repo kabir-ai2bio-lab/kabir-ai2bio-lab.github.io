@@ -1,0 +1,14 @@
+- image: gmu.png
+  url: https://www.gmu.edu/
+
+- image: NSF.png
+  url: https://www.nsf.gov/
+  
+- image: LANL-logo.png
+  url: https://www.lanl.gov/
+
+- image: doe_logo.png
+  url: https://www.energy.gov/
+
+- image: pnri-logo.png
+  url: https://pnri.org/

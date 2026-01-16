@@ -1,0 +1,35 @@
+Installing dependencies:
+    actual template: https://github.com/sbryngelson/academic-website-template
+    This requires jekyll 4.3.3 (defined in Gemfile). 
+    
+    sudo apt install git
+    
+    ### follow this page: https://jekyllrb.com/docs/installation/ubuntu/
+    sudo apt-get install ruby-full build-essential zlib1g-dev    # install jekyll
+    sudo gem install jekyll bundler
+
+    ### for MAC: https://jekyllrb.com/docs/installation/macos/
+
+# install dependencies
+bundle install
+
+#### Run $ "bundle exec jekyll serve" in the repository root directory to run it on localhost.
+Caution: 
+    ctrl+z does not stop running on the localhost
+    Use the following instruction to find and kill the process that is using the port: 
+        You need to use kill -9 59780 with 59780 replaced with found PID number (use "lsof -wni tcp:4000" to see which process used 3000 port and get the process PID).
+
+
+#### publish the site with the following instructions:
+1. run "rake publish". This will create a folder "docs". This will be set as the website directory.
+
+
+To change bootstrap themes from website/ directory:
+    ./switch_theme.sh darkly
+bootstrap themes list in a dropdown menu here: https://bootswatch.com/
+
+
+issues:
+if the ref.bib contains slash in the id (i.e. 10.1093/bioinformatics/btad699), it cannot show the bib/abstract tab.
+<link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">    ------ this was "/assets/main.css"
+
