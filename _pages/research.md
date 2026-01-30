@@ -5,48 +5,66 @@ sitemap: false
 permalink: /research/
 ---
 
-
-
 ## Research
 
-<!-- <div class="container">
-<div class="row">
-<center>
-<img src="{{ site.url }}{{ site.baseurl }}/images/schematic_summary_of_prediction_tasks.png" width="100%"/><br/>
-A schematic summary Bio prediction tasks. <br/>
-</center>
-</div>
-</div>
-<br/> -->
 
-
-<div class="jumbotron">
+<div class="bg-light p-3" style="overflow: auto; margin-bottom:10px">
   <div class="alert alert-dismissible alert-success">
-  <h4>Research Thrust I: Incorporating Biological Priors for Better Data Representations</h4>
+  <h4>Research Thrust: Physics-informed Knowledge Fusion in Genomic Foundation Models</h4>
   </div>
-  <div> 
-  <img src="{{ site.url }}{{ site.baseurl }}/images/goproformer_arch.png" width="45%" style="float: right;margin: 2px;">
+  
+  <img src="{{ site.url }}{{ site.baseurl }}/images/physics_integration_GFMs.jpg" style="float: right;margin: 2px; max-width:35%;">
+  <p>DNA double helical structure unwinds and recombines locally due to the DNA thermal fluctuations. We develop a physics-guided simulation tool to model and capture this phenomena. Next, we design a deep learning based multi-modal architecture that integrates a genomic foundation model and DNA breathing features extracted by the simulation for predicting transcription factor binding sites across various cell lines. To expediate the generation of DNA breathing features, we develop a conditional generative architecture that is highly efficient and accurate with respect to the simulation.</p>
+  <div>Publications:
+  <ul>
+  <li>Kabir, A., Bhattarai, M., Rasmussen, K. Ø., Shehu, A., Usheva, A., Bishop, A. R., & Alexandrov, B. (2023). Examining DNA breathing with pyDNA-EPBD. Bioinformatics (Oxford, England), 39(11). doi:10.1093/bioinformatics/btad699 </li>
+  
+  <li>Kabir, A., Bhattarai, M., Peterson, S., Najman-Licht, Y., Rasmussen, K. Ø., Shehu, A., … Usheva, A. (2024). DNA breathing integration with deep learning foundational model advances genome-wide binding prediction of human transcription factors. Nucleic Acids Research, 52(19), e91. doi:10.1093/nar/gkae783 </li>
+  
+  <li>Kabir, A., Inan, T. T., Rasmussen, K., Shehu, A., Usheva, A., Bishop, A., … Bhattarai, M. (2024). Scalable DNA feature generation and transcription factor binding prediction via deep surrogate models. doi:10.1101/2024.12.06.626709 </li>
+
+  <li>Inan, T. T., Kabir, A., Rasmussen, K., Shehu, A., Usheva, A., Bishop, A., Alexandrov, B., & Bhattarai, M. (2024). Efficient High-Throughput DNA Breathing Features Generation Using Jax-EPBD. doi:10.1101/2024.12.06.627191 </li>
+  </ul>
+  
   </div>
-  <p>Large molecular language models are emerging as a powerful tool to learn and extract useful information from molecular sentences and linking them to functions. However, these models, typically trained on sequences alone, miss opportunities to integrate data from heterogeneous sources. Inspired by molecular evolution and the relationship between structure, function and properties, we propose models that incorporate multiple molecular representations. As an example, we incorporate mutual functional terms' relationships as biological priors to annotate proteins from only sequence information. We attribute two key contributions: a novel method that utilizes the transformer architecture in two ways, one for encoding protein sequence and another for encoding functional hierarchy, and a deep investigation of different ways of constructing training and testing datasets. The learned sequence and functional terms’ representations are combined and utilized for multi-label Gene Ontology (GO) term classification.  The method is shown superior over three recent representative GO prediction methods. The work also reveals that existing approaches under- or over-estimate the generalizability of a model. A novel approach is proposed to address these issues, resulting in a new benchmark dataset to rigorously evaluate, compare and advance the methods. This work has appeared in Biomolecules, 2022 (impact factor 5.80).</p>
 </div>
 
-<div class="jumbotron">
-  <div class="alert alert-dismissible alert-info">
-  <h4>Research Thrust II: Integrating Physical Processes beyond Biological Priors</h4>
+<div class="bg-light p-3" style="overflow: auto; margin-bottom:10px">
+  <div class="alert alert-dismissible alert-success">
+  <h4>Research Thrust: Biological Sequence is Necessary but not Sufficient for Accurate Predictions</h4>
   </div>
-  <div> 
-  <img src="{{ site.url }}{{ site.baseurl }}/images/epbd_arch.png" width="45%" style="float: left;margin: 2px;">
+  
+  <img src="{{ site.url }}{{ site.baseurl }}/images/ sequence_not_enough.jpg" style="float: right;margin: 2px; max-width:35%;">
+  <p>A class of foundation models have been proposed by addressing many suitable biologically relevant prediction problems. We assess a set of state of the art methods in terms of functional characterization of the molecules. We highlight our findings in mutation effect and remote homology understanding of the methods as a stress test of capturing the tiny changes in the molecules. </p>
+  <div>Publications:
+  <ul>
+  <li>Kabir, A., Moldwin, A., & Shehu, A. (2023). A comparative analysis of transformer-based protein language models for remote homology prediction. Proceedings of the 14th ACM International Conference on Bioinformatics, Computational Biology, and Health Informatics, 1–9. Presented at the BCB ’23: 14th ACM International Conference on Bioinformatics, Computational Biology, and Health Informatics, Houston TX USA. doi:10.1145/3584371.3612942 </li>
+  
+  <li>Kabir, A., Moldwin, A., Bromberg, Y., & Shehu, A. (2024). In the twilight zone of protein sequence homology: do protein language models learn protein structure? Bioinformatics Advances, 4(1), vbae119. doi:10.1093/bioadv/vbae119 </li>
+  
+  <li>Bromberg, Y., Prabakaran, R., Kabir, A., & Shehu, A. (2024). Variant effect prediction in the age of machine learning. Cold Spring Harbor Perspectives in Biology, 16(7), a041467. doi:10.1101/cshperspect.a041467 </li>
+
+  </ul>
+  
   </div>
-  <p>Decades of simulation-derived physical analyses in biology have been somewhat overlooked with the rise of deep learning. We posit that certain knowledge might not be fully captured by DL models alone, necessitating physical guidance. To bridge this gap, we propose to incorporate physics-based priors into biological foundation models, as such we apply physics-based DNA features to guide a genomic foundation model for transcription factor (TF) binding prediction tasks. We developed a multi-modal DL model, EPBDxDNABERT-2, to ascertain the precise relationship between TF-DNA binding. The key contribution of this research is the integration of physical processes and guidance to the foundation model through the cross attention (Fig. 3). Trained on the experimental data encompassing 161 distinct TFs and 91 human cell types EPBDxDNABERT-2 significantly improves the prediction of over 660 TF-DNA, with an increase in the AUROC metric of up to 9.6% when compared to the baseline model that does not leverage DNA biophysical properties. Extended analysis on an in vitro dataset of 215 TFs from 27 families demonstrates the effectiveness of the DNA breathing features with established frameworks. This work has appeared in the Nucleic Acid Research, 2024 (impact factor 16.6).</p>
 </div>
 
+<div class="bg-light p-3" style="overflow: auto; margin-bottom:10px">
+  <div class="alert alert-dismissible alert-success">
+  <h4>Research Thrust: Integration of Biological Multi-modalities</h4>
+  </div>
+  
+  <img src="{{ site.url }}{{ site.baseurl }}/images/seq_struct.jpg" style="float: right;margin: 2px; max-width:35%;">
+  <p>We design and develop effective deep learning based architectures by incorporating multi-modal representations of the molecules for predicting biological tasks, such as protein function prediction, structure prediction.  </p>
+  <div>Publications:
+  <ul>
+  <li>Kabir, A., & Shehu, A. (2022). GOProFormer: A multi-modal transformer method for Gene Ontology protein function prediction. Biomolecules, 12(11), 1709. doi:10.3390/biom12111709  </li>
 
-<div class="jumbotron">
-  <div class="alert alert-dismissible alert-secondary">
-  <h4>Research Thrust III: Exposing Fundamental Properties and Organization of the Representation Space</h4>
+  <li>Kabir, A., & Shehu, A. (2022, November). Sequence-structure embeddings via protein language models improve on prediction tasks. 2022 IEEE International Conference on Knowledge Graph (ICKG). Presented at the 2022 IEEE International Conference on Knowledge Graph (ICKG), Orlando, FL, USA. doi:10.1109/ickg55886.2022.00021</li>
+  
+  <li>Du, Y., Kabir, A., Zhao, L., & Shehu, A. (2020). From interatomic distances to protein tertiary structures with a deep convolutional neural network. Proceedings of the 11th ACM International Conference on Bioinformatics, Computational Biology and Health Informatics. Presented at the BCB ’20: 11th ACM International Conference on Bioinformatics, Computational Biology and Health Informatics, Virtual Event USA. doi:10.1145/3388440.3414699  </li>
+
+  </ul>
+  
   </div>
-  <div> 
-  <img src="{{ site.url }}{{ site.baseurl }}/images/remhom.png" width="45%" style="float: right;margin: 2px;">
-  </div>
-  <p>Over the years, numerous computational methods have been developed to accurately model the language of life. To enhance explainability in language models, we investigated the properties of the learned embedding space for protein molecular domains, concentrating on two challenging areas: remote homology prediction and mutation effect analysis. We address this by evaluating PLMs on remote homology prediction, where identifying remote homologs from sequence information alone requires structural knowledge, especially in the “twilight zone” of very low sequence identity. Through rigorous testing, we profile the performance of PLMs ranging from millions to billions of parameters in a zero-shot setting. Our findings indicate that PLMs still struggle in the twilight zone, that is, the current PLMs have not sufficiently learned protein structure to address remote homology prediction when sequence signals are weak. This has appeared in Bioinformatics Advances, 2024 (impact factor 4.4).</p>
 </div>
