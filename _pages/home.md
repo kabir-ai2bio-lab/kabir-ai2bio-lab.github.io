@@ -27,7 +27,7 @@ The fusion of computer science and molecular biology has opened new avenues for 
 
 <div class="jumbotron">
 #### **AI to Bio Reading Group: Weekly meeting schedule (Spring 2026)**
-**Where**: ENB313 (Engineering Builing II, Room 313).<br>
-**When**: Every Friday, 3-5PM.<br>
+**Where**: ENB313 (Engineering Building II, Room 313).<br>
+**When**: Every Friday, 3-4PM.<br>
 Feel free to join this lively discussion.
 </div>
