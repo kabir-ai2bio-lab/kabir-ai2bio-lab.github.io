@@ -5,11 +5,11 @@
     <a href="{{site.url}}{{site.baseurl}}/about"><img src="{{site.url}}{{site.baseurl}}/images/{{ member.photo }}" width="85%" style="block:inline; margin-left:auto; margin-right:auto; margin-bottom:5px;"/></a>
     <h3>{{ member.name }}</h4>
       
-    <h5 style="overflow: hidden">
+    <h6 style="overflow: hidden">
       {% for education in member.affiliationshort %}
         {{ education | replace: "-","&#8211;" }}<br/>
       {% endfor %}
-    </h5>
+    </h6>
 
     <div style="margin-bottom:5px">
       <!-- {% if member.email %}<a href="mailto:{{ member.email }}" target="_blank"><i class="fa fa-envelope-square fa-3x"></i></a> {% endif %} -->
@@ -28,8 +28,8 @@
 {% endfor %}
 </div>
 
-<!-- <div class="jumbotron">
-  <h4>News</h4>
+<div class="jumbotron">
+  <h4>Excited News</h4>
 
   {% for article in site.data.news limit:3 %}
   <b>{{ article.date }}</b>
@@ -38,4 +38,4 @@
   
   <h5><a href="{{ site.url }}{{ site.baseurl }}/allnews.html">... see all News</a></h5>
 
-</div> -->
+</div>

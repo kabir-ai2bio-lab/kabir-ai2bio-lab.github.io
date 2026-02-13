@@ -36,6 +36,7 @@ permalink: /services/
 <div class="col-sm-5 bg-light p-3" style="margin-right:10px">
   <h4>**Active External Reviewer**</h4>
   <ul>
+    <li>Reviewer for KDD 2026 AI4Sciences Track (2026)</li>
     <li>Bioinformatics Advances (2024-present)</li>
     <li>Computational Biology and Bioinformatics (<u>CBB</u>) (2025-present)</li>
     <li>Computational Structural Biology Workshop (<u>CSBW</u>) (2023-present)</li>

@@ -33,9 +33,15 @@ years: [2016, 2017, 2018, 2019, 2020, 2021]
 </div>
 
 <div class="jumbotron">
+<h4>Peer Reviewed Workshop Papers</h4>
+{% bibliography --query @misc %}
+</div>
+
+<div class="jumbotron">
 <h4>Book Chapters</h4>
 {% bibliography --query @inbook %}
 </div>
+
 
 <div class="jumbotron">
 <h4>Preprints</h4>

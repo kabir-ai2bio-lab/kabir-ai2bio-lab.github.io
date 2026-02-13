@@ -1,3 +1,84 @@
+@unpublished{InfanteKabir2025LoMuS,
+	author = {Infante, Samuel and Singh, Akash and Kabir, Anowarul},
+	title = {LoMuS: Low-Rank Adaptation with Multimodal Representations Improves Protein Stability Prediction},
+	elocation-id = {2025.12.15.694540},
+	year = {2025},
+	doi = {10.64898/2025.12.15.694540},
+	publisher = {Cold Spring Harbor Laboratory},
+	abstract = {Protein folding stability is a key determinant for understanding protein dynamics, including molecular function, pathogenicity, and/or protein engineering. Yet, accurate prediction of protein stability changes remains a challenging problem due to the high-variability in the available data, especially from sequence-only information when structural knowledge is of low-resolution or unavailable. In this work, we introduce LoMuS, a Multimodal deep learning model that combines two complimentary aspects of the molecule and predicts unnormalized protein Stability effect from the primary sequence as input. In the core of the model architecture, a fusion network integrates explicit physicochemical descriptors with Low-rank adapted protein language model derived embeddings from the sequence that shows powerful and accurate generalization ability across various benchmark settings for predicting protein folding stability changes. We compared and rigorously evaluated our model capacity spanning from fold-induced stability changes to mutation caused stability effect prediction. This includes benchmarking against various held-out protein domains, out-of-distribution label settings and per-protein evaluation. LoMuS consistently outperforms other sequence-only protein stability baselines. It achieves an absolute performance gain by an at least 10\% in the spearman rank correlation metric for predicting protein stability across many held-out domains and out-of-distribution stability label predictions. Per-protein validation additionally demonstrates promising performance gain of our model. Ablation analysis on the model architectural choices confirms that complementary signals from derived features are critical for this multimodal approach. We believe LoMuS advances protein engineering research and can aid in rational protein design by elucidating precise protein stability changes.Availability All codes including data preparation scripts, training and validation recipes, and experimental configurations for LoMuS are available at: https://github.com/samuelinfantee/LoMuS-repository.Supplementary information Supplementary data are available at Journal Name online.Competing Interest StatementThe authors have declared no competing interest.MLMachine LearningDLDeep LearningPLMProtein Language ModelMLPsMulti-layer Perceptrons},
+	URL = {https://www.biorxiv.org/content/early/2025/12/18/2025.12.15.694540},
+	eprint = {https://www.biorxiv.org/content/early/2025/12/18/2025.12.15.694540.full.pdf},
+	journal = {bioRxiv}
+}
+
+@unpublished{SinghKabir2026Obstetric,
+	author = {Singh, Akash and Infante, Samuel and Kim, Seungbae and Kabir, Anowarul},
+	title = {Predicting Obstetric and Non-obstetric Diagnoses Co-occurrences during Pregnancy},
+	elocation-id = {2026.02.06.704385},
+	year = {2026},
+	doi = {10.64898/2026.02.06.704385},
+	publisher = {Cold Spring Harbor Laboratory},
+	abstract = {Pregnancy care often involves simultaneous obstetric and other medical conditions, but their co-occurrence patterns are rarely modeled explicitly in a systematic, network-based approach. In this work, we formulate obstetric and non-obstetric diagnoses co-occurrences as a link prediction problem on a diagnosis-level homogeneous graph constructed from pregnancy encounters. Diagnoses are represented as nodes connected by co-occurrence edges, with node features capturing graph structure and demographic statistics3.We address this challenge by leveraging collected electronic health records data and study several standalone and hybrid graph neural network (GNN) architectures, including GCN, GAT, GraphSAGE, and three hybrid encoders that combine complementary aggregation mechanisms, namely GCN+GraphSAGE, GCN+GAT, and GAT+GraphSAGE. All models used consistent train-validation-test splits and are evaluated on 5- fold cross-validation sets. Among standalone models, GraphSAGE achieved the strongest performance, whereas hybrid GraphSAGE-based models (GCN+GraphSAGE and GAT+GraphSAGE) are best performers. The GCN+GraphSAGE hybrid, reaching an AUROC and AUPRC of approximately 0.90, consistently outperformed all other architectures. Further analysis of top-ranked predicted links revealed clinically plausible associations between pregnancy stage and risk-related diagnoses and common endocrine, metabolic, and hematological conditions. These findings indicate that graph-based link prediction may effectively prioritize obstetric and non-obstetric diagnosis pairs, providing a scalable framework for identifying clinically meaningful comorbidity patterns. They may further support hypothesis generation and downstream obstetric risk stratification efforts.Availability All codes including data preparation scripts, training and validation recipes, and experimental configurations are available at: https://github.com/kabir-ai2bio-lab/ob-nonob-diagnoses-cooccurrences.Competing Interest StatementThe authors have declared no competing interest.},
+	URL = {https://www.biorxiv.org/content/early/2026/02/09/2026.02.06.704385},
+	eprint = {https://www.biorxiv.org/content/early/2026/02/09/2026.02.06.704385.full.pdf},
+	journal = {bioRxiv}
+}
+
+@misc{InanBhattarai2024JaxEPBD,
+	author = {Inan, Toki Tahmid and Kabir, Anowarul and Rasmussen, Kim and Shehu, Amarda and Usheva, Anny and Bishop, Alan and Alexandrov, Boian and Bhattarai, Manish},
+	title = {Efficient High-Throughput DNA Breathing Features Generation Using Jax-EPBD},
+	elocation-id = {2024.12.06.627191},
+	year = {2024},
+	doi = {10.1101/2024.12.06.627191},
+	publisher = {Cold Spring Harbor Laboratory},
+	abstract = {DNA breathing dynamics{\textemdash}transient base-pair opening and closing due to thermal fluctuations{\textemdash}are vital for processes like transcription, replication, and repair. Traditional models, such as the Extended Peyrard-Bishop-Dauxois (EPBD), provide insights into these dynamics but are computationally limited for long sequences. We present JAX-EPBD, a high-throughput Langevin molecular dynamics framework leveraging JAX for GPU-accelerated simulations, achieving up to 30x speedup and superior scalability compared to the original C-based EPBD implementation. JAX-EPBD efficiently captures time-dependent behaviors, including bubble lifetimes and base flipping kinetics, enabling genome-scale analyses. Applying it to transcription factor (TF) binding affinity prediction using SELEX datasets, we observed consistent improvements in R2 values when incorporating breathing features with sequence data. Validating on the 77-bp AAV P5 promoter, JAX-EPBD revealed sequence-specific differences in bubble dynamics correlating with transcriptional activity. These findings establish JAX-EPBD as a powerful and scalable tool for understanding DNA breathing dynamics and their role in gene regulation and transcription factor binding.Competing Interest StatementThe authors have declared no competing interest.},
+	URL = {https://www.biorxiv.org/content/early/2024/12/12/2024.12.06.627191},
+	eprint = {https://www.biorxiv.org/content/early/2024/12/12/2024.12.06.627191.full.pdf},
+	journal = {bioRxiv}
+}
+
+@misc{KabirBhattarai2024SurrEPBD,
+	author = {Kabir, Anowarul and Inan, Toki Tahmid and Rasmussen, Kim and Shehu, Amarda and Usheva, Anny and Bishop, Alan and Alexandrov, Boian and Bhattarai, Manish},
+	title = {Scalable DNA Feature Generation and Transcription Factor Binding Prediction via Deep Surrogate Models},
+	elocation-id = {2024.12.06.626709},
+	year = {2024},
+	doi = {10.1101/2024.12.06.626709},
+	publisher = {Cold Spring Harbor Laboratory},
+	abstract = {Simulating DNA breathing dynamics, for instance Extended Peyrard-Bishop-Dauxois (EPBD) model, across the entire human genome using traditional biophysical methods like pyDNA-EPBD is computationally prohibitive due to intensive techniques such as Markov Chain Monte Carlo (MCMC) and Langevin dynamics. To overcome this limitation, we propose a deep surrogate generative model utilizing a conditional Denoising Diffusion Probabilistic Model (DDPM) trained on DNA sequence-EPBD feature pairs. This surrogate model efficiently generates high-fidelity DNA breathing features conditioned on DNA sequences, reducing computational time from months to hours{\textendash}a speedup of over 1000 times. By integrating these features into the EPBDxDNABERT-2 model, we enhance the accuracy of transcription factor (TF) binding site predictions. Experiments demonstrate that the surrogate-generated features perform comparably to those obtained from the original EPBD framework, validating the model{\textquoteright}s efficacy and fidelity. This advancement enables real-time, genome-wide analyses, significantly accelerating genomic research and offering powerful tools for disease understanding and therapeutic development.Competing Interest StatementThe authors have declared no competing interest.},
+	URL = {https://www.biorxiv.org/content/early/2024/12/10/2024.12.06.626709},
+	eprint = {https://www.biorxiv.org/content/early/2024/12/10/2024.12.06.626709.full.pdf},
+	journal = {bioRxiv}
+}
+
+@unpublished{KabirShehu2022SeqStructTransformer,
+      title={Transformer Neural Networks Attending to Both Sequence and Structure for Protein Prediction Tasks}, 
+      author={Anowarul Kabir and Amarda Shehu},
+      year={2022},
+      eprint={2206.11057},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2206.11057},
+      doi={10.48550/arXiv.2206.11057},
+      abstract = {},
+}
+
+
+@article{TangDudley2026epistasis,
+author = {Michelle Tang  and Gareth A. Cromie  and Anowarul Kabir  and Martin S. Timour  and Julee Ashmead  and Russell S. Lo  and Nathaniel Corley  and Frank DiMaio  and Hiroki Morizono  and Ljubica Caldovic  and Nicholas Ah Mew  and Andrea Gropman  and Amarda Shehu  and Aimée M. Dudley },
+title = {Predicting epistasis across proteins by structural logic},
+journal = {Proceedings of the National Academy of Sciences},
+volume = {123},
+number = {3},
+pages = {e2516291123},
+year = {2026},
+doi = {10.1073/pnas.2516291123},
+URL = {https://www.pnas.org/doi/abs/10.1073/pnas.2516291123},
+eprint = {https://www.pnas.org/doi/pdf/10.1073/pnas.2516291123},
+impact = "10.6",
+abstract = {Epistatic interactions present a major challenge in accurate genotype–phenotype correlation. Here, we combined high-throughput yeast assays and machine learning to explore and predict intragenic complementation, a form of epistatic interaction, in human ASL, a gene associated with a urea cycle disorder. Of the ~3,600 combinations of complete loss-of-function missense variants tested, over 60\% can restore argininosuccinate lyase (ASL) function to near wild-type levels. We demonstrated that intragenic complementation is determined by the spatial positioning of the two variants in the protein structure and is predictable by machine learning with exceptional accuracy. We estimated intragenic complementation to occur in at least 800 human proteins. Our study provides a method for predicting intragenic complementation to help bridge the genotype–phenotype gap. Accurately predicting the phenotypic consequences of genetic variation is a major challenge for precision medicine. The problem is exacerbated by epistatic interactions, nonadditive effects between genetic variants that produce unexpected phenotypes. Here, we explore an understudied form of positive epistasis: intragenic complementation, in which pairs of loss-of-function variants restore near wild-type protein function. Using mutational scanning in yeast, we identify thousands of such interactions in a clinically important enzyme, human argininosuccinate lyase (ASL). Restoration of protein function is not due to the biochemical properties of the substituted amino acids, but rather to a structural feature of the protein, the active site assembly. We develop a machine learning algorithm that uses protein language model embeddings to predict intragenic complementation in ASL with 99.6\% accuracy. Additionally, the model trained on ASL generalizes to a structurally related but sequence-divergent enzyme, fumarase, with accuracy over 90\%. Our findings reveal a structural basis for this form of epistasis and provide a predictive framework that could extend to at least 4\% of human proteins.}
+}
+
+
 
 @Article{kabirshehu2022goproformer,
 AUTHOR = {Kabir, Anowarul and Shehu, Amarda},
@@ -15,16 +96,6 @@ DOI = {10.3390/biom12111709},
 impact = "5.8",
 }
 
-@unpublished{kabirshehu2022protoformerpreprint,
-      title={Transformer Neural Networks Attending to Both Sequence and Structure for Protein Prediction Tasks}, 
-      author={Anowarul Kabir and Amarda Shehu},
-      year={2022},
-      eprint={2206.11057},
-      archivePrefix={arXiv},
-      primaryClass={cs.LG},
-      url={https://arxiv.org/abs/2206.11057}, 
-      ABSTRACT={The increasing number of protein sequences decoded from genomes is opening up new avenues of research on linking protein sequence to function with transformer neural networks. Recent research has shown that the number of known protein sequences supports learning useful, task-agnostic sequence representations via transformers. In this paper, we posit that learning joint sequence-structure representations yields better representations for function-related prediction tasks. We propose a transformer neural network that attends to both sequence and tertiary structure. We show that such joint representations are more powerful than sequence-based representations only, and they yield better performance on superfamily membership across various metrics.},
-}
 
 @inproceedings{kabirshehu2022af2mutanalysis,
   author    = {Anowarul Kabir and Toki Inan and Amarda Shehu},
