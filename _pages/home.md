@@ -5,7 +5,7 @@ sitemap: false
 permalink: /
 ---
 
-#### **Welcome to Kabir's AI to BIO Lab (A2B)**
+#### **Welcome to Kabir's AI to BIO Lab (AI2Bio)**
 We advance **Artificial intelligence (AI)** and **Computational Biology** research by designing and developing robust, explainable and accessible **Machine Learning (ML)** algorithms for solving complex **Molecular Biology** problems.
 
 #### **Mission**
@@ -26,7 +26,7 @@ We relentlessly aim to achieve the following goals:
 The fusion of computer science and molecular biology has opened new avenues for decoding the complex language of life. AI-algorithms can analyze vast omics data, distill deeper knowledge, detect patterns and simulate molecular interactions that once required decades of laboratory work. We believe future AI-driven insights will advance our understanding of fundamental biological mechanisms and pave the way for novel treatments.
 
 <div class="jumbotron">
-#### **AI to Bio Reading Group: Weekly meeting schedule (Spring 2026)**
+#### **AI2Bio Reading Group: Weekly meeting schedule (Spring 2026)**
 **Where**: ENB313 (Engineering Building II, Room 313).<br>
 **When**: Every Friday, 3-4PM.<br>
 Feel free to join this lively discussion.
